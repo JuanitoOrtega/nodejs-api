@@ -18,3 +18,6 @@ npm i express
 
 # Instalamos datos faker
 npm i faker
+
+# Instalamos el paquete
+npm i @hapi/boom
