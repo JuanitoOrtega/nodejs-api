@@ -21,3 +21,9 @@ npm i faker
 
 # Instalamos el paquete
 npm i @hapi/boom
+
+# Instalo librería para validar datos que me está enviando el cliente
+npm i joi
+
+# Para solucionar el problema de CORS instalamos la siguiente librería
+npm i cors
