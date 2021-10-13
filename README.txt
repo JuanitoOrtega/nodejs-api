@@ -27,3 +27,10 @@ npm i joi
 
 # Para solucionar el problema de CORS instalamos la siguiente librería
 npm i cors
+
+# Heroku
+heroku login
+heroku create
+
+# Ejecutamos nuestro proyecto localmente
+heroku local web
