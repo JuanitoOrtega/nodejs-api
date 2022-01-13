@@ -5,7 +5,7 @@ npm init -y
 git init
 
 # -D para modo de desarrollo
-npm i -D nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier
+npm install nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier -D
 
 # Ejecutamos nuestro servidor en modo desarrollo
 npm run dev
@@ -14,19 +14,19 @@ npm run dev
 npm run start
 
 # Instalamos express
-npm i express
+npm install express
 
 # Instalamos datos faker
-npm i faker
+npm install faker -D
 
 # Instalamos el paquete
-npm i @hapi/boom
+npm install @hapi/boom
 
 # Instalo librería para validar datos que me está enviando el cliente
-npm i joi
+npm install joi
 
 # Para solucionar el problema de CORS instalamos la siguiente librería
-npm i cors
+npm install cors
 
 # Heroku
 heroku login
@@ -34,3 +34,6 @@ heroku create
 
 # Ejecutamos nuestro proyecto localmente
 heroku local web
+
+# Push al repositorio de heroku
+git push heroku master

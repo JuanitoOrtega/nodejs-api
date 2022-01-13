@@ -19,6 +19,7 @@ const options = {
     }
   }
 }
+
 app.use(cors(options));
 
 app.get('/', (req, res) => {
@@ -30,6 +31,28 @@ app.get('/nueva-ruta', (req, res) => {
 });
 
 routerApi(app);
+
+// app.get('/users', (req, res) => {
+//   const { limit, offset } = req.query;
+//   if (limit && offset) {
+//     res.json({
+//       limit,
+//       offset
+//     });
+//   } else {
+//     res.send('No hay parámetros');
+//   }
+// });
+
+// app.get('/categories/:categoryId/products/:productId', (req, res) => {
+//   const { categoryId, productId } = req.params;
+//   res.json({
+//     categoryId,
+//     productId,
+//     producto: 'Monitor LG',
+//     precio: '$1,200.00'
+//   });
+// });
 
 app.use(logErrors);
 app.use(boomErrorHandler);
