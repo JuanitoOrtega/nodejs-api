@@ -93,3 +93,32 @@ docker-compose up -d mysql
 
 # Instalamos paquete para conectarse a mysql
 npm install --save mysql2
+
+# Para poder hacer migraciones instalamos el siguiente paquete en modo desarrollo
+npm install sequelize-cli --save-dev
+
+# Ejecutamos una migración
+npm run migrations:generate create-user
+
+npm run migrations:run
+
+# Para generar una nueva migración
+npm run migrations:generate add-role
+
+# Volvemos a ejecutar la migración
+npm run migrations:run
+
+# Creamos el archivo de migración
+npm run migrations:generate create-customers
+
+# Levantamos los contenedores, modo silencioso
+docker-compose up -d
+
+# Ejecutamos la migración
+npm run migrations:run
+
+# Creamos un nuevo archivo de migración para corregir relación uno a uno
+npm run migrations:generate change-user-id
+
+# Volvemos a inyectar la migración
+npm run migrations:run
