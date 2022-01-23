@@ -150,3 +150,10 @@ npm run migrations:generate order-product
 
 # Volvemos a inyectar la migración
 npm run migrations:run
+
+:::::::::::::::::::::::::::::::::::::
+|				HEROKU				|
+:::::::::::::::::::::::::::::::::::::
+
+# Ver repositorios remotos
+git remote -v
