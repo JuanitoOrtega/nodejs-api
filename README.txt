@@ -122,3 +122,31 @@ npm run migrations:generate change-user-id
 
 # Volvemos a inyectar la migración
 npm run migrations:run
+
+# Si hay problemas al hacer la migración, este comando brinda más información:
+sequelize-cli db:migrate --debug
+
+# Creamos un archivo de migración para productos
+npm run migrations:generate products
+
+# Volvemos a inyectar la migración
+npm run migrations:run
+
+////////// RELACIONES /////////////
+Customer 1:1 User
+Product N:1 Category
+Products N:N Orders
+
+///////////////////////////////////
+
+# Creamos una nueva migración
+npm run migrations:generate order
+
+# Volvemos a inyectar la migración
+npm run migrations:run
+
+# Creamos una nueva migración
+npm run migrations:generate order-product
+
+# Volvemos a inyectar la migración
+npm run migrations:run

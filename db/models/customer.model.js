@@ -50,7 +50,12 @@ class Customer extends Model {
     static associate(models) {
         // Creamos la relación desde el modelo Customer hacia el modelo User
         // El foreignKey está en la tabla Customer que se relaciona con el campo id del modelo User
-        this.belongsTo(models.User, {as: 'user'});
+        this.belongsTo(models.User, { as: 'user' });
+        // Un cliente puede tener muchas ordenes de compra
+        this.hasMany(models.Order, {
+            as: 'orders',
+            foreignKey: 'customerId'
+        });
     }
 
     static config(sequelize) {
