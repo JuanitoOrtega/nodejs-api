@@ -172,3 +172,9 @@ heroku addons:docs heroku-postgresql
 
 # Ver estado de pg
 heroku pg:info
+
+# Creamos un nueva rama
+git checkout -b production
+
+# Deploy a heroku
+git push heroku production:master
