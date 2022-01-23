@@ -26,10 +26,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-app.get('/nueva-ruta', (req, res) => {
-  res.send('Hola, soy una nueva ruta');
-});
-
 routerApi(app);
 
 app.use(logErrors);
