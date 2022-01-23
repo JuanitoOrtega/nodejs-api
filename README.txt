@@ -155,5 +155,20 @@ npm run migrations:run
 |				HEROKU				|
 :::::::::::::::::::::::::::::::::::::
 
-# Ver repositorios remotos
+# Ver repositorios remotos conectados a nuestro repo local
 git remote -v
+
+# Eliminamos repositorio remoto
+git remote rm <name>
+
+# Añadir repositorio remoto
+heroku git:remote -a nodejs-pg
+
+# Añadimos un servicio adicional de heroku
+heroku addons:create heroku-postgresql:hobby-dev
+
+# Ver documentación
+heroku addons:docs heroku-postgresql
+
+# Ver estado de pg
+heroku pg:info
