@@ -21,11 +21,6 @@ module.exports = {
           allowNull: false,
           type: DataTypes.STRING
       },
-      // role: {
-      //     allowNull: false,
-      //     type: DataTypes.STRING,
-      //     defaultValue: 'customer'
-      // },
       createdAt: {
           allowNull: false,
           type: DataTypes.DATE,
@@ -36,6 +31,6 @@ module.exports = {
   },
 
   async down (queryInterface) {
-    // await queryInterface.dropTable(USER_TABLE);
+    await queryInterface.dropTable(USER_TABLE);
   }
 };

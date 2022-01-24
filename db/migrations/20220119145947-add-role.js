@@ -13,6 +13,6 @@ module.exports = {
   },
 
   async down (queryInterface) {
-    // await queryInterface.removeColumn(USER_TABLE, 'role');
+    await queryInterface.removeColumn(USER_TABLE, 'role');
   }
 };
