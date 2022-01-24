@@ -181,3 +181,6 @@ git push heroku production:master
 
 # Corremos la migración en el servidor de heroku
 heroku run npm run migrations:run
+
+# Eliminamos migraciones existentes
+heroku run npm run migrations:delete

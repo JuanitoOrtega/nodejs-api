@@ -1,7 +1,6 @@
 'use strict';
 
 const { DataTypes } = require('sequelize');
-
 const { CUSTOMER_TABLE } = require('../models/customer.model');
 
 module.exports = {
