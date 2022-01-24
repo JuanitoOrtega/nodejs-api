@@ -178,3 +178,6 @@ git checkout -b production
 
 # Deploy a heroku
 git push heroku production:master
+
+# Corremos la migración en el servidor de heroku
+heroku run npm run migrations:run
